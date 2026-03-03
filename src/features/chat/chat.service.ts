@@ -32,7 +32,7 @@ export const getAiResponse = async (userMessage: string, context: any, history: 
     const todayStr = today.toLocaleDateString('en-US');
     const maxDateStr = maxDate.toLocaleDateString('en-US');
 
-    const rootUrl = process.env.FRONTEND_URL;
+    const rootUrl = "https://cutio-demo.netlify.app";
     const bookingLink = `${rootUrl}/booking`;
 
     const systemInstruction = `You are the virtual assistant of a luxury barbershop named "Cutio".

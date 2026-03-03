@@ -32,7 +32,7 @@ export const getAiResponse = async (userMessage: string, context: any, history: 
     const todayStr = today.toLocaleDateString('en-US');
     const maxDateStr = maxDate.toLocaleDateString('en-US');
 
-    const rootUrl = process.env.FRONTEND_URL || 'http://localhost:5173';
+    const rootUrl = process.env.FRONTEND_URL;
     const bookingLink = `${rootUrl}/booking`;
 
     const systemInstruction = `You are the virtual assistant of a luxury barbershop named "Cutio".
